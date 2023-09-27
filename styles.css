@@ -43,6 +43,8 @@ body {
   
   .right {
     background-color: #2ecc71;
+    /* background-image: url("catHotdog.png"); */
+    /* background-size: cover; */
     transform: rotateY(-90deg) translateZ(100px);
   }
   
