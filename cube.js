@@ -6,15 +6,15 @@ let currentBorderRadius = 10;
 // Function to start the animation
 function startAnimation(animationClass) {
   // Remove the previous animation class if there was one
-  if (currentAnimation) {
+  if (animationClass) {
     box.style.animation = "";
   }
 
   // Set the new animation class
   box.style.animation = ` ${animationClass} 8s linear infinite`;
 
-  // Store the current animation class
-  currentAnimation = animationClass;
+  // // Store the current animation class
+  // currentAnimation = animationClass;
 
   // Start the animation
   box.style.animationPlayState = "running";
