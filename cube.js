@@ -1,6 +1,6 @@
 const box = document.querySelector("#box");
 const sides = document.querySelectorAll(".side");
-let currentAnimation = null;
+// let currentAnimation = null;
 let currentBorderRadius = 10;
 
 // Function to start the animation
