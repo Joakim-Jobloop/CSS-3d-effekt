@@ -2,6 +2,7 @@ const box = document.querySelector("#box");
 const sides = document.querySelectorAll(".side");
 // let currentAnimation = null;
 let currentBorderRadius = 10;
+let currentBorderWidth = 1;
 
 // Function to start the animation
 function startAnimation(animationClass) {
@@ -50,4 +51,20 @@ function decreaseBorderRadius() {
     currentBorderRadius -= 10;
     updateBorderRadius();
   }
+}
+
+function updateBorderWidth() {
+  sides.forEach((side) => {
+    side.style.borderWidth = currentBorderWidth + "px";
+  });
+}
+
+function increaseBorderWidth() {
+  currentBorderWidth += 1;
+  updateBorderWidth();
+}
+
+function decreaseBorderWidth() {
+  currentBorderWidth -= 1;
+  updateBorderWidth();
 }

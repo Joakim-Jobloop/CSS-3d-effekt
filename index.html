@@ -1,44 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
     <script src="cube.js" defer></script>
     <!-- <script src="https://cdn.tailwindcss.com"></script> -->
     <title>CSS 3d effekt</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="button_wrapper">
-        <button class="start_button" onclick="startAnimation('spinY')">Spin Y</button>
-        <button class="start_button" onclick="startAnimation('spinZ')">Spin Z</button>
-        <button class="start_button" onclick="startAnimation('spinX')">Spin X</button>
-        <button class="start_button" onclick="startAnimation('spinXY')">Spin XY</button>
-        <button class="start_button" onclick="startAnimation('spinZY')">Spin ZY</button>
-        <button class="start_button" onclick="startAnimation('spinZX')">Spin ZX</button>
-        <button class="start_button" onclick="startAnimation('spinZYX')">Spin ZYX</button>
-        <button class="stop_button" onclick="stopAnimation()">Stop</button>
-        <button class="control_button" onclick="controlDirection('reverse')">backwards</button>
-        <button class="control_button" onclick="controlDirection('normal')">forwards</button>
-        <button class="style_button" onclick="increaseBorderRadius()">border radius +</button>
-        <button class="style_button" onclick="decreaseBorderRadius()">border radius -</button>
-    </div>
+      <button class="start_button" onclick="startAnimation('spinY')">
+        Spin Y
+      </button>
+      <button class="start_button" onclick="startAnimation('spinZ')">
+        Spin Z
+      </button>
+      <button class="start_button" onclick="startAnimation('spinX')">
+        Spin X
+      </button>
+      <button class="start_button" onclick="startAnimation('spinXY')">
+        Spin XY
+      </button>
+      <button class="start_button" onclick="startAnimation('spinZY')">
+        Spin ZY
+      </button>
+      <button class="start_button" onclick="startAnimation('spinZX')">
+        Spin ZX
+      </button>
+      <button class="start_button" onclick="startAnimation('spinZYX')">
+        Spin ZYX
+      </button>
+      <button class="stop_button" onclick="stopAnimation()">Stop</button>
+      <button class="control_button" onclick="controlDirection('reverse')">
+        backwards
+      </button>
+      <button class="control_button" onclick="controlDirection('normal')">
+        forwards
+      </button>
+      <button class="style_button" onclick="increaseBorderRadius()">
+        border radius +
+      </button>
+      <button class="style_button" onclick="decreaseBorderRadius()">
+        border radius -
+      </button>
+      <button class="style_button" onclick="increaseBorderWidth()">
+        border width +
+      </button>
+      <button class="style_button" onclick="decreaseBorderWidth()">
+        border width -
+      </button>
     </div>
     <div class="container">
-        <div class="box" id="box">
-            <div class="box_glow"></div>
-            <div class="box_glow rotate45"></div>
-            <div class="box_glow rotate90"></div>
-            <div class="side front"></div>
-            <div class="side back"></div>
-            <div class="side right"></div>
-            <div class="side left"></div>
-            <div class="side top"></div>
-            <div class="side bottom"></div>
-        </div>
+      <div class="box" id="box">
+        <div class="box_glow"></div>
+        <div class="box_glow rotate45"></div>
+        <div class="box_glow rotate90"></div>
+        <div class="side front"></div>
+        <div class="side back"></div>
+        <div class="side right"></div>
+        <div class="side left"></div>
+        <div class="side top"></div>
+        <div class="side bottom"></div>
+      </div>
     </div>
-</body>
-
+  </body>
 </html>
